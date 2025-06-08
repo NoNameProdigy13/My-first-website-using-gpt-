@@ -4,90 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No Name Prodigy</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #ffffff;
+      overflow-x: hidden;
       padding: 20px;
     }
-    header {
-      text-align: center;
+
+    h1, h2, h3 {
+      color: #60a5fa;
+      animation: fadeIn 1s ease-in-out;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-      color: #00ffcc;
-    }
+
     p {
-      max-width: 600px;
-      text-align: center;
-      line-height: 1.6;
-      margin-bottom: 2em;
+      color: #d1d5db;
+      animation: fadeIn 1.5s ease-in-out;
     }
-    .section {
-      margin: 30px 0;
-      max-width: 800px;
-      text-align: left;
-    }
-    .section h2 {
-      border-left: 5px solid #00ffcc;
-      padding-left: 10px;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "•";
-      color: #00ffcc;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }
-    .contact {
-      margin-top: 40px;
-      padding: 10px 20px;
-      background-color: #00ffcc;
-      color: #0a0a0a;
+
+    .btn {
+      background-color: #3b82f6;
       border: none;
+      color: white;
+      padding: 10px 20px;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 1em;
-      transition: background-color 0.3s;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      margin-top: 20px;
     }
-    .contact:hover {
-      background-color: #00ccaa;
+
+    .btn:hover {
+      background-color: #2563eb;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .icon {
+      font-size: 30px;
+      margin: 10px;
+      color: #60a5fa;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: rotate(15deg) scale(1.2);
+      color: #93c5fd;
+    }
+
+    .icon-box {
+      margin-top: 20px;
+    }
+
+    .quote {
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      color: #a5b4fc;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 0 0 10px #60a5fa;
+    }
+
+    .coming-soon {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #334155;
+      text-align: center;
+    }
+
+    .coming-soon h2 {
+      color: #93c5fd;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .coming-soon p {
+      font-size: 14px;
+      color: #cbd5e1;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>No Name Prodigy</h1>
-    <p>This is my first website built with the help of ChatGPT. I want to become an AI Architect!</p>
-  </header>
+  <h1>🚀 Welcome to No Name Prodigy</h1>
+  <p>Your journey to becoming an AI Architect starts here!</p>
 
-  <div class="section">
-    <h2>My Skills</h2>
-    <ul>
-      <li>Learning AI</li>
-      <li>Web Development</li>
-      <li>Football Enthusiast</li>
-    </ul>
-  </div>
+  <button class="btn">Learn More</
 
-  <div class="section">
-    <h2>My Goal</h2>
-    <p>I want to create smart AI tools, build cool websites, and become one of the best AI architects in the world.</p>
-  </div>
-
-  <button class="contact">Contact Me</button>
-</body>
-</html>
+      
+      
